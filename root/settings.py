@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'expense',
     'rest_framework',
     'knox',
+    'frontend'
 ]
 
 

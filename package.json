@@ -1,0 +1,24 @@
+{
+  "name": "django-rest-expense-manager",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/GhostChaserr/expense-manager-django-rest.git",
+  "author": "GhostChaser <george.batsiashvili@geolab.edu.ge>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack --watch --mode development ./frontend/src/index.js --output ./frontend/static/frontend/main.js",
+    "build": "webpack --mode production ./frontend/src/index.js --output ./frontend/static/frontend/main.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.42.0",
+    "webpack-scli": "^3.3.11"
+  },
+  "dependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  }
+}

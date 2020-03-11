@@ -20,6 +20,7 @@ from knox import views as knox_views
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
+    path("", include("frontend.urls")),
     path("", include("expense.urls")),
     path('api/auth', include('knox.urls')),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
